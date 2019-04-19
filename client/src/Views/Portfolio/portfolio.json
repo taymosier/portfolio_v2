@@ -1,0 +1,138 @@
+{
+  "general java programming": {
+    "content": {
+      "header": "java header",
+      "text": "java text"
+    },
+    "date": "2015-2018",
+    "tags": [
+      {
+        "id": "Github Repo",
+        "url": ""
+      }
+    ],
+    "links": ["java links"]
+  },
+  "general python programming": {
+    "content": {
+      "header": "python general header",
+      "text": "python general text"
+    },
+    "date": "2016 - ",
+    "tags": [
+      {
+        "id": "Github Repo",
+        "url": ""
+      }
+    ],
+    "links": ["python general links"]
+  },
+  "eBay Crawler": {
+    "content": {
+      "header": "eBay header",
+      "text": "eBay text"
+    },
+    "date": "November 2017",
+    "tags": [
+      {
+        "id": "Github Repo",
+        "url": ""
+      }
+    ],
+    "links": ["eBay links"]
+  },
+  "Pokedex": {
+    "content": {
+      "header": "pokedex header",
+      "text": "pokedex text"
+    },
+    "date": "December 2017",
+    "tags": [
+      {
+        "id": "Github Repo",
+        "url": ""
+      }
+    ],
+    "links": ["pokedex links"]
+  },
+  "Grade Calculator": {
+    "content": {
+      "header": "Grade Calculator",
+      "text": "Grade Calculator"
+    },
+    "date": "March 2018",
+    "tags": [
+      "react.js"
+    ],
+    "links": [
+      {
+        "id": "Github Repo",
+        "url": "https://github.com/taymosier/grade_calculator"
+      }
+    ]
+  },
+  "Ibx Mockup Website": {
+    "content": {
+      "header": "ibx header",
+      "text": "ibx text"
+    },
+    "date": "November 2017 - January 2018",
+    "tags": [
+      {
+        "id": "Github Repo",
+        "url": ""
+      }
+    ],
+    "links": ["ibx links"]
+  },
+  "GCC Inventory Management App": {
+    "content": {
+      "header": "gcc header",
+      "text": "gcc text"
+    },
+    "date": "September-December 2018",
+    "tags": ["gcc tags"],
+    "links": [
+      {
+        "id": "Github Repo",
+        "url": "https://github.com/taymosier/psa"
+      }
+    ]
+  },
+  "grand luxxe vacation rentals": {
+    "content": {
+      "header": "grande header",
+      "text": "grande text",
+      "icons": [
+        "html",
+        "css",
+        "react.js",
+        "node.js",
+        "bootstrap",
+        "express"
+      ]
+    },
+    "date": "February 2019 - ",
+    "tags": ["Github Repo"],
+    "links": [
+      {
+        "id": "Github Repo",
+        "url": "https://github.com/taymosier/grand"
+      }
+    ]
+  },
+  "Poked3x Graph Analysis": {
+    "content": {
+      "header": "graph poke header",
+      "text": "graph poke text"
+    },
+    "date": "April 2019 - ",
+    "tags": [
+      {
+        "id": "Github Repo",
+        "url": "https://github.com/taymosier/pokeD3x"
+      }
+    ],
+    "links": ["graph poke links"]
+  }
+}

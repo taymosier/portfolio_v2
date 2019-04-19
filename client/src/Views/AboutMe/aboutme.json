@@ -1,0 +1,66 @@
+{
+  "Introduction": {
+    "body":{
+      "Elevator Speech": {
+        "header": "Hello",
+        "body": "I am a web and software developer who specializes in creating dynamic, modern web applications. I specialize in the MERN stack and have been using it since 2016. I am looking for entry level positions with a company that encourages mentorship. I hope to take on projects that will challenge and teach me while also providing opportunities to helpfully contribute to a team effort."
+      }
+    }
+  },
+  "Goals": {
+    "header": "goals header",
+    "body": {
+      "Currently": {
+        "header": "Current Goals",
+        "body": "I am hoping to find an entry-level developer position in the Raleigh-Durham area. I have built full stack applications in the past; both front-end and back-end positions are suitable. As a self-taught developer coming from a business/marketing background, I hope to find a mentor who will point out the weak areas of my technical knowledge."
+      },
+      "Career": {
+        "header": "Career Goals",
+        "body": "My short-term career goals are to find a position with a company that will help me grow as a developer through challenging projects and exposure to the various aspects of web development. My long term goals are to gain enough experience to become a software architect and consult individuals and companies on how to tackle their web and software challenges."
+      },
+      "Work/Life": {
+        "header": "Balance",
+        "body": "I have honest expectations of what my work/life balance will be in an entry-level developer position, but look forward to an opportunity to learn through immersion. Once I have “earned my stripes,” I hope to have a normal forty-hour workweek. The option to work remotely would be nice, however I am not requiring that in the positions I consider. "
+      }
+    }
+  },
+  "Education": {
+    "header": "EDUCATION HEADER",
+    "body": {
+      "Web/Software Development": {
+        "header": "2013-",
+        "body": "I AM EDUCATION CONTENT"
+      },
+      "NCSU": {
+        "header": "North Carolina State University",
+        "body": "I AM COLLEGE CONTENT"
+      }
+    }
+  },
+  "Employment": {
+    "header": "EMPLOYEMTN HEADER",
+    "body": {
+      "Dauntless Discovery": {
+        "header": "DAUNTLESS SECTION HEADER",
+        "body": "DAUNT CONTENT"
+      },
+      "Greenville Convention Center": {
+        "header": "Head Bartender",
+        "body": "GCC CONTENT"
+      }
+    }
+  },
+  "Interests": {
+    "header": "INTERESTES HEADER",
+    "body": {
+      "Books": {
+        "header": "INTERSTS HEADER",
+        "body": "INTEREST CONTENT"
+      },
+      "Airplanes": {
+        "header": "INTERSTS HEADER",
+        "body": "INTEREST CONTENT"
+      }
+    }
+  }
+}

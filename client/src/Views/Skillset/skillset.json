@@ -1,0 +1,198 @@
+{
+  "html": {
+    "content": {
+      "icon" : "",
+      "header": "html header",
+      "text": "html Text"
+    }
+  },
+  "css": {
+    "content": {
+      "icon" : "",
+      "header": "CSS header",
+      "text": "CSS Text"
+    }
+  },
+  "bootstrap": {
+    "content": {
+      "icon" : "",
+      "header": "Bootstrap header",
+      "text": "Bootstrap Text"
+    }
+  },
+  "linux": {
+    "content": {
+      "icon" : "",
+      "header": "Linux header",
+      "text": "Linux Text"
+    }
+  },
+  "mongodb": {
+    "content": {
+      "icon" : "",
+      "header": "MongoDB header",
+      "text": "MongoDB Text"
+    }
+  },
+  "php": {
+    "content": {
+      "icon" : "",
+      "header": "PHP header",
+      "text": "PHP Text"
+    }
+  },
+  "git": {
+    "content": {
+      "icon" : "",
+      "header": "Git Node.jsheader",
+      "text": "Git Text"
+    }
+  },
+  "node.js": {
+    "content": {
+      "icon" : "",
+      "header": "Node.js header",
+      "text": "Node.js Text"
+    }
+  },
+  "powershell": {
+    "content": {
+      "icon" : "",
+      "header": "Powershell header",
+      "text": "PoJSONershell Text"
+    }
+  },
+  "json": {
+    "content": {
+      "icon" : "",
+      "header": "JSON header",
+      "text": "JSNginXON Text"
+    }
+  },
+  "express.js": {
+    "content": {
+      "icon" : "",
+      "header": "Skill header",
+      "text": "Skill Text"
+    }
+  },
+  "nginx": {
+    "content": {
+      "icon" : "",
+      "header": "NBrand ManagementginX header",
+      "text": "Brand Management Text"
+    }
+  },
+  "brand management": {
+    "content": {
+      "icon" : "",
+      "header": "Brand Management header",
+      "text": "Brand Management Text"
+    }
+  },
+  "front end development": {
+    "content": {
+      "icon" : "",
+      "header": "Front End Development header",
+      "text": "Front End Development Text"
+    }
+  },
+  "back end development": {
+    "content": {
+      "icon" : "",
+      "header": "Back End Development header",
+      "text": "Back End Development Text"
+    }
+  },
+  "jQuery": {
+    "content": {
+      "icon" : "",
+      "header": "jQuery header",
+      "text": "jQuery Text"
+    }
+  },
+  "responsive design": {
+    "content": {
+      "icon" : "",
+      "header": "Responsive design header",
+      "text": "Responsive design Text"
+    }
+  },
+  "marketing": {
+    "content": {
+      "icon" : "",
+      "header": "Marketing header",
+      "text": "Marketing Text"
+    }
+  },
+  "java": {
+    "content": {
+      "icon" : "",
+      "header": "java header",
+      "text": "java Text"
+    }
+  },
+  "webpack": {
+    "content": {
+      "icon" : "",
+      "header": "Webpack header",
+      "text": "Webpack Text"
+    }
+  },
+  "wordpress": {
+    "content": {
+      "icon" : "",
+      "header": "wordpress header",
+      "text": "wordpress Text"
+    }
+  },
+  "object oriented programming": {
+    "content": {
+      "icon" : "",
+      "header": "object oriented programming header",
+      "text": "object oriented programming Text"
+    }
+  },
+  "react router": {
+    "content": {
+      "icon" : "",
+      "header": "react router header",
+      "text": "react router Text"
+    }
+  },
+  "d3": {
+    "content": {
+      "icon" : "",
+      "header": "d3 header",
+      "text": "d3 Text"
+    }
+  },
+  "relational databases": {
+    "content": {
+      "icon" : "",
+      "header": "relational databases header",
+      "text": "relational databases Text"
+    }
+  },
+  "python": {
+    "content": {
+      "icon" : "",
+      "header": "python header",
+      "text": "python Text"
+    }
+  },
+  "javascript": {
+    "content": {
+      "icon" : "",
+      "header": "javascript header",
+      "text": "javascript Text"
+    }
+  },
+  "react.js": {
+    "content": {
+      "icon" : "",
+      "header": "React.js header",
+      "text": "React.js Text"
+    }
+  }
+}

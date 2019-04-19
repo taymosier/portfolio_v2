@@ -1,0 +1,207 @@
+@keyframes backgroundTransition {
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: .4;
+  }
+}
+
+@keyframes boxShadowRadiate {
+  from { box-shadow: 0px 0px 0px 0px darkslategray;}
+  to {  box-shadow: -1px 2px 7.5px 0px darkslategray;}
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes filterShift {
+  from {
+    opacity: .6;
+  }
+  to {
+    opacity: .2;
+  }
+}
+
+@keyframes pageColorTransition {
+  0% {background: transparent;}
+  5% {background: #e3e855;}
+  10% {background: transparent;}
+  15% {background: #81b73e;}
+  20% {background: transparent;}
+  25% {background: #54d88b;}
+  30% {background: transparent;}
+  35% {background: #4fa814;}
+  40% {background: transparent;}
+  45% {background: #2dad66;}
+  50% {background: transparent;}
+  55% {background: #2ea045;}
+  60% {background: transparent;}
+  65% {background: #1e8c08;}
+  70% {background: transparent;}
+  75% {background: #26996e;}
+  80% {background: transparent;}
+  85% {background: #21a83c;}
+  90% {background: transparent;}
+  95% {background: #449955;}
+  100% {background: transparent;}
+}
+
+@keyframes pulseHeader {
+  from{
+    letter-spacing: 15px;
+    text-shadow: 0px 0px 0px darkslategray;
+  }
+  to {
+    letter-spacing: 16px;
+    text-shadow: -2.5px 4px 10px black;
+  }
+}
+
+@keyframes shiftBackgroundColor {
+  from {  background: linear-gradient(135deg,#425c84 25%, #87CEEB 75%, #425c84);}
+  to { background: linear-gradient(135deg,#425c84 25%, steelblue 75%, #425c84);}
+}
+
+@keyframes shiftFilter {
+  from{
+    background: linear-gradient(10deg, #6f7e99 0%, #6185a0 50%, #6582a3 100%);
+  }
+  to {
+    background: linear-gradient(10deg, #66bab4 0%, #479182 50%, #479182 100%);
+  }
+}
+
+@keyframes textPulse {
+  from {
+    text-shadow: 0 0 0 black;
+    letter-spacing: 3.15px;
+  }
+  to {
+    text-shadow: -1px 0px 10px lightblue;
+    letter-spacing: 4px;
+  }
+}
+
+#contactFormSubmitButton:hover, .contact-modal-button:hover {
+  animation-name: textPulse;
+  animation-duration: .4s;
+  animation-delay: .1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+
+.filter-on {
+  opacity: .4;
+  animation-name: pageColorTransition;
+  animation-duration: 90s;
+  animation-delay: 0s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  animation-timing-function: linear;
+}
+
+.header-container .slow-pulse {
+  animation-name: pulseHeader;
+  animation-duration: 7.5s;
+  animation-delay: 5s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.header-container .pulse {
+  animation-name: pulseHeader;
+  animation-duration: 2.5s;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.main-row-col {
+  animation-name: boxShadowRadiate;
+  animation-duration: 2.5s;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.main-row-col button p:hover {
+  animation-name: textPulse;
+  animation-duration: .4s;
+  animation-delay: .1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.project-card {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-iteration-count: .4;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+.card-close-button {
+  animation-name: textPulse;
+  animation-duration: .4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+.section-option button:hover {
+  animation-name: textPulse;
+  animation-duration: .65s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+.skill-card{
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-iteration-count: .4;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+.skill-grid {
+  animation-name: fadeIn;
+  animation-duration: .2s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+.skill-grid-button {
+  animation-name: fadeIn;
+  animation-duration: .1s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+.skill-grid-button.btn-secondary:not(:disabled):not(.disabled).active {
+  animation-name: fadeIn;
+  animation-duration: 1.25s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
