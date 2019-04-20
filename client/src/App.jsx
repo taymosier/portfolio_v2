@@ -8,13 +8,12 @@ const helpers = require('./helpers.js');
 
 //TODO
 // Prepend class names of about me main right column with "about"
-// add "active" state to about me view / make active subtopic tab border outset
 // add skill logos to button/objects
 // Home: mobile styling
 // About Me: add content / style mobile
 // *** Skills: add content to skill objects
-// Portfolio: create mobile view components
-// Contact: style movile
+// Portfolio: style modal elements / create generateLinkButtons function / add content
+// Contact: replace github and linkedin text with icons
 
 class App extends Component {
   // MAKE SURE YOU PASS PROPS IF YOU LOAD FROM SERVER.....dumbass...
@@ -82,15 +81,7 @@ class App extends Component {
           taylor mosier
           </header>
         </div>
-        <div style={{
-               "position": "absolute",
-               "margin": "2vw",
-               "top": "50px"
-             }}
-             >
-              {`Screen Size: ${this.state.screenSize} | `}
-              {`Active Key: ${this.state.activeView}`}
-             </div>
+
         <Portal
           screenSize={this.state.screenSize}
           activeView={this.state.activeView}

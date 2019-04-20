@@ -26,14 +26,14 @@
     animation-timing-function: ease-in-out;
   }
 
-  .about-me-filter {
-    opacity: .4;
-    min-width: 73.375%;
-    min-height: 72.33%;
+  .about-me-filter { /* mobile */
+    opacity: .3;
+    min-width: 97%;
+    min-height: 83vh;
     position: absolute;
     z-index: -400;
     background: linear-gradient(135deg, darkslategray 5%, black 30% );
-    margin: -2px 0 0 -3.5px;
+    margin: 0;
   }
 
   .about-me-left-col {
@@ -46,6 +46,36 @@
     border: 15px inset #6582a3;
   }
 
+  .about-me-modal .modal-content {
+    min-height: 80vh;
+    margin: 12.5vh 0 0 0;
+  }
+
+  .about-me-modal .modal-content .modal-body{
+    font-size: 4.5vw;
+    padding: 5vh 10vw;
+    text-align: left;
+  }
+
+  .modal-dialog .about-me-modal {
+    z-index: 2000;
+  }
+
+  .about-me-modal-close-button {
+    padding: 15px 0 0 0;
+    margin: 0 auto 5px 85%;
+    font-size: 10vw;
+    line-height: 10vw;
+  }
+
+  .about-me-modal .modal-header > .modal-title {
+    text-align: center;
+    min-width: fit-content;
+    max-width: fit-content;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
   .about-me-right-col {
     padding: 10px;
     margin: 0 0 0 2.25vw;
@@ -53,11 +83,41 @@
     border-left: 1.5px solid black;
   }
 
-  .about-me-view {
+  .about-me-section-nav{
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 0;
+  }
+
+  .about-me-section-nav ul {
+    min-height: 3vh;
+    min-width: 100%;
+  }
+
+  .about-me-section-nav ul > li {
+    font-size: 4vw;
+    font-weight: 400;
+    font-family: "Work Sans";
+    letter-spacing: 1px;
+    margin: 0 ;
+    min-height: 100%;
+    padding: 5px 0px;
+    text-align: center;
+    text-shadow: 1px 0px 3px grey;
+    border-right: 1px solid black;
+  }
+
+  .about-me-section-nav ul > li:first-child {
+  }
+
+  .about-me-view { /* mobile */
     background: transparent;
-    border: 17.5px outset ghostwhite;
-    max-width: 75%;
-    margin: 0 0 0 12.5%;
+    border: 7.5px outset ghostwhite;
+    max-height: 85vh;
+    max-width: 100%;
+    margin: 15vh 0 0 0;
+    overflow-y: scroll;
   }
 
   .App { /* mobile */
@@ -100,13 +160,12 @@
   body {
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-      sans-serif;
+    font-family: "Work Sans";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: linear-gradient(135deg,#6486ba 25%, #87CEEB 70%, #425c84);
     min-height: 100vh;
+    max-height: 100vh;
     min-width: 100vw;
     text-align: center;
     overflow: hidden;
@@ -115,6 +174,7 @@
 
 
   .body-filter { /* mobile */
+    margin: 0;
     min-height: 100vh;
     position: absolute;
     min-width: 100vw;
@@ -418,7 +478,7 @@
 
   .grid-button{
     background: transparent;
-    border: 7.5px outset #6582a3;
+    border: 7.5px outset ghostwhite;
     height: 8vh;
     font-size: 1.6vw;
     font-weight: 200;
@@ -449,12 +509,12 @@
 
   .grid-filter{ /* mobile */
     min-width: 100%;
-    min-height: 125vh;
+    min-height: 100%;
     position: absolute;
     background: linear-gradient(135deg, darkslategray 5%, black 30% );
-    opacity: .45;
+    opacity: .3;
     z-index: -100;
-    margin: -2.5vh;
+    margin: 0 ;
   }
 
   .main-row {
@@ -543,11 +603,11 @@
 
   .projects-grid { /* mobile */
     border: 17.5px outset white;
-    padding: 2.5vh 2.5vw;
-    height: 85vh;
-    min-height: 85vh;
-    max-height: 85vh;
-    margin-top: 12.5vh;
+    padding: 0;
+    height: 87.5vh;
+    min-height: 87.5vh;
+    max-height: 87.5vh;
+    margin-top: 13vh;
     overflow-y: scroll;
   }
 
@@ -556,16 +616,17 @@
   }
 
   .projects-row {
-    margin: 0;
+    margin: 1vh 0;
   }
 
   .projects-row button{
     background: transparent;
     border: 5px outset ghostwhite;
-    font-size: 5vw;
-    font-weight: 100;
+    font-family: "Work Sans" ;
+    font-size: 7.5vw;
+    font-weight: 300;
     letter-spacing: 1.5px;
-    text-shadow: -1px 1px 7.5px black;
+    text-shadow: -1px 1px 5px black;
   }
 
   #projectModal{
@@ -573,25 +634,27 @@
     min-height: 70vh;
   }
 
-.project-modal-close-button {
-  text-align: right;
-  max-width: fit-content;
-  margin: 0vh 7.5vw 1vh auto;
-  font-size: 12vw;
-  line-height: 12vw;
-}
+  .project-modal-close-button {
+    text-align: right;
+    max-width: fit-content;
+    margin: 0vh 7.5vw 0 auto;
+    padding: 2vh 0 !important;
+    font-size: 10vw;
+    line-height: 10vw;
+  }
 
-#projectModal > .modal-content .modal-header {
-  padding: 0;
-  min-width: fit-content;
-  max-width: fit-content;
-  width: fit-content;
-  margin: .25vh auto .75vh auto;
-}
+  #projectModal > .modal-content .modal-header {
+    padding: 0;
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+    margin: .25vh auto .75vh auto;
+  }
 
   #projectModal > .modal-content .modal-header .modal-title {
     text-align: center;
-    font-size: 10vw;
+    font-size: 8vw;
+    min-width: 100%;
   }
 
   #projectModal > .modal-content .modal-body {
@@ -641,24 +704,34 @@
     border: 10px ridge ghostwhite;
   }
 
-  .section-option, .section-option button {
+  .section-option { /* mobile */
+    min-width: 100%;
+  }
+
+  .section-option, .section-option button { /* mobile */
     font-size: 22px;
     font-weight: 300;
     letter-spacing: .9px;
-    font-variant: petite-caps;
+    font-variant: none;
     background-color: transparent;
     border-radius: 0;
-    min-width: 89%;
-    margin: 0 auto;
   }
 
-  .section-option button {
+  .section-option button { /* mobile */
     padding: 0;
-    font-size: 1.3vw;
-    letter-spacing: 2.25px;
+    min-height: 10vh;
+    max-height: 10vh;
+    height: 10vh;
+    font-family: "Work Sans";
+    font-size: 8vw;
+    font-weight: 200;
+    max-width: 90%;
+    letter-spacing: 3.5px;
     box-shadow: 2px 2px 3px 0.25px black;
-    border: 5px outset #6582a3;
+    border: 5px outset ghostwhite;
     transition: .3s linear;
+    margin: 2.5vh 0 0 5%;
+    text-shadow: -1px 1px 5px black;
   }
 
   .section-option button:hover {
@@ -667,10 +740,12 @@
   }
 
 
-  .section-options-container {
+  .section-options-container { /* mobile */
     margin: 0;
-    min-height: 35vh;
-    padding: .5vh 0 0 0;
+    min-height: 83vh;
+    min-width: 100vw;
+    padding: 5vh 0 0 0;
+    display: block;
   }
 
   .section-tabs{
@@ -717,23 +792,32 @@
     border-bottom-style: ridge;
   }
 
-  .skill-grid {
-    border: 17.5px outset white;
-    padding: 2.5vh 2.5vw;
+  .skill-grid { /* mobile */
+    border-top: 7.5px outset white;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    padding: 0;
+    overflow-y: scroll;
+    max-height: 85vh;
+    z-index: 500;
   }
 
   .skill-grid-row {
+    margin: 0;
     padding: 0 1%;
+    overflow-y: scroll;
   }
 
-  .skill-grid-row .grid-button{
-    font-size: 1.4vw;
-    line-height: 1.5vw;
-    min-height: 9vh;
+  .skill-grid-row .grid-button{ /* mobile */
+    font-size: 7.5vw;
+    line-height: 7.5vw;
+    min-height: 12.5vh;
     max-height: fit-content;
     padding: 2.5px 5px;
     letter-spacing: 1px;
-    text-shadow: -1.5px .75px 2.5px black;
+    text-shadow: -1.5px 0.75px 2.5px black;
+    z-index: 500;
   }
 
   .skill-grid-button:hover {
@@ -760,7 +844,9 @@
   }
 
   .skillset-view-container {
-    padding: 2.5vh 0 7.5vh 0;
+    margin: 15vh 0 0 0;
+    padding: 0;
+    overflow-y: scroll;
   }
 
 }

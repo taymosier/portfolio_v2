@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
 import { Button } from 'reactstrap';
 
-import { capitalize } from '../../../../helpers.js'
-
 export class MobileGridButton extends Component{
   constructor(props){
     super(props);
     this.state = {
       toggleActiveKey: this.props.toggleActiveKey
     };
-    this.capitalize = this.capitalize.bind(this);
   }
 
   componentDidMount(){
@@ -36,19 +33,6 @@ export class MobileGridButton extends Component{
         item: this.props.item
       })
     }
-  }
-
-  capitalize(word){
-    let strArray = word.split(" ");
-    let split;
-    if(strArray[0] === undefined){ return word}
-    for(let item in strArray){
-      split = strArray[item].split("");
-      split[0] = split[0].toUpperCase();
-      console.log(`split ${split[0]}`)
-      strArray[item]= split.join("")
-    }
-    return strArray.join(" ");
   }
 
   render(){

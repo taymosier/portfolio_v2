@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import { Row } from 'reactstrap';
 
-import {SkillGrid} from './Grid/SkillGrid';
+import { MobileSkillModal } from './Grid/MobileSkillModal';
+import { MobileSkillGrid } from './Grid/MobileSkillGrid';
 
 
 import skills from '../skillset.json';
@@ -17,6 +18,7 @@ export class MobileSkillView extends Component {
       skillKeys: Object.keys(skills)
     };
     this.setActiveSkill = this.setActiveSkill.bind(this);
+    this.closeModal = this.closeModal.bind(this);
   }
 
   componentDidMount(){
@@ -40,7 +42,7 @@ export class MobileSkillView extends Component {
       this.setState({
         activeSkill: skill,
         card: {
-          image: this.state.skillSet[skill].content.icon,
+          icon: this.state.skillSet[skill].content.icon,
           title: this.state.skillSet[skill].content.header,
           text: this.state.skillSet[skill].content.text
         }
@@ -48,15 +50,27 @@ export class MobileSkillView extends Component {
     }
   }
 
-
+  closeModal(){
+    this.setState({
+      activeSkill: null,
+      card: null
+    })
+  }
 
 
 
   render(){
     return(
       <Row className={"skillset-view-container"}>
-        MOBILE
-        <SkillGrid
+        {this.state.card !== undefined && this.state.card !== null
+          ? <MobileSkillModal
+              visible={this.state.card !== null && this.state.card !== undefined}
+              card={this.state.card !== null && this.state.card !== undefined ? this.state.card : null}
+              closeModal={this.closeModal}
+            />
+          : null
+        }
+        <MobileSkillGrid
           skills={this.state.skillSet}
           keys={this.state.skillKeys}
           activeSkill={this.state.activeSkill}

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import { DefaultView } from './Views/DefaultView';
 import { AboutMe } from './Views/AboutMe/AboutMe.jsx';
+import { MobileAboutMe } from './Views/AboutMe/Mobile/MobileAboutMe.jsx';
 import { SkillView } from './Views/Skillset/SkillView.jsx';
 import { MobileSkillView } from './Views/Skillset/Mobile/MobileSkillView.jsx';
 import { Portfolio } from './Views/Portfolio/Portfolio.jsx';
@@ -37,6 +38,9 @@ export class Portal extends Component {
         case "DefaultView":
           return <DefaultView setActiveView={this.state.setActiveView}/>;
         case "AboutMeView":
+          if(this.props.screenSize === "medium" || this.props.screenSize === "small" || this.props.screenSize === "xsmall"){
+            return <MobileAboutMe />
+          }
           return <AboutMe />;
         case "SkillView":
           if(this.props.screenSize === "medium" || this.props.screenSize === "small" || this.props.screenSize === "xsmall"){

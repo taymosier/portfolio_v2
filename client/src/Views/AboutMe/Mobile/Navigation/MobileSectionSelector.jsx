@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
-import { SectionOption } from './SectionOption';
+import { MobileSectionOption } from './MobileSectionOption';
 
 
-export class SectionSelector extends Component {
+export class MobileSectionSelector extends Component {
   constructor(props){
     super(props);
     this.state = {
-      updateActiveSection: this.props.updateActiveSection
+      updateActiveSectionBy: this.props.updateActiveSectionBy
     };
   }
 
@@ -21,14 +21,13 @@ export class SectionSelector extends Component {
     let optionButtons = [];
     let index = 0;
     if(this.state.keys){
-      let buttonHeight = `${(35/this.state.keys.length)-1}vh`;
       for(let item in this.state.keys){
         optionButtons.push(
-          <SectionOption
+          <MobileSectionOption
+            key={index}
             index={index}
-            style={{"minHeight": `${buttonHeight}`, "maxHeight": `${buttonHeight}`}}
             option={this.state.keys[item]}
-            updateActiveSection={this.state.updateActiveSection}
+            updateActiveSectionBy={this.state.updateActiveSectionBy}
           />
         )
         index++;

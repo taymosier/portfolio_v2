@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Button } from 'reactstrap';
 
 
-export class SkillButton extends Component {
+export class MobileSkillButton extends Component {
   constructor(props){
     super(props);
     this.state = {}
@@ -34,7 +34,6 @@ export class SkillButton extends Component {
     for(let item in strArray){
       split = strArray[item].split("");
       split[0] = split[0].toUpperCase();
-      console.log(`split ${split[0]}`)
       strArray[item]= split.join("")
     }
     return strArray.join(" ");

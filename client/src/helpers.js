@@ -48,7 +48,7 @@ export function detectOrientationChange(currentOrientationState){
   let screenHeight= window.innerHeight;
   let screenWidth = window.innerWidth;
   let newOrientationState;
-  { screenWidth > screenHeight ? newOrientationState = "landscape" : newOrientationState = "portrait" }
+  screenWidth > screenHeight ? newOrientationState = "landscape" : newOrientationState = "portrait"
   if(currentOrientationState !== newOrientationState){
     return newOrientationState;
   }

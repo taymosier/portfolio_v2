@@ -5,13 +5,13 @@
       "text": "java text"
     },
     "date": "2015-2018",
-    "tags": [
+    "tags": [""],
+    "links": [
       {
         "id": "Github Repo",
-        "url": ""
+        "url": "https://github.com/taymosier/Java-Practice"
       }
-    ],
-    "links": ["java links"]
+    ]
   },
   "general python programming": {
     "content": {
@@ -19,13 +19,13 @@
       "text": "python general text"
     },
     "date": "2016 - ",
-    "tags": [
+    "tags": ["python"],
+    "links": [
       {
         "id": "Github Repo",
-        "url": ""
+        "url": "https://github.com/taymosier/Python-Practice"
       }
-    ],
-    "links": ["python general links"]
+    ]
   },
   "eBay Crawler": {
     "content": {
@@ -33,13 +33,13 @@
       "text": "eBay text"
     },
     "date": "November 2017",
-    "tags": [
+    "tags": ["eBay", "Python"],
+    "links": [
       {
         "id": "Github Repo",
-        "url": ""
+        "url": "https://github.com/taymosier/ebay_crawler"
       }
-    ],
-    "links": ["eBay links"]
+    ]
   },
   "Pokedex": {
     "content": {
@@ -47,13 +47,17 @@
       "text": "pokedex text"
     },
     "date": "December 2017",
-    "tags": [
+    "tags": ["react", "bootstrap", "css", "html"],
+    "links": [
       {
         "id": "Github Repo",
-        "url": ""
+        "url": "https://github.com/taymosier/pokedex"
+      },
+      {
+        "id": "Live App",
+        "url": "https://taymosier.github.io/pokedex/"
       }
-    ],
-    "links": ["pokedex links"]
+    ]
   },
   "Grade Calculator": {
     "content": {
@@ -61,13 +65,15 @@
       "text": "Grade Calculator"
     },
     "date": "March 2018",
-    "tags": [
-      "react.js"
-    ],
+    "tags": ["react.js"],
     "links": [
       {
         "id": "Github Repo",
         "url": "https://github.com/taymosier/grade_calculator"
+      },
+      {
+        "id": "Live App",
+        "url": "https://taymosier.github.io/grade_calculator/"
       }
     ]
   },
@@ -77,13 +83,13 @@
       "text": "ibx text"
     },
     "date": "November 2017 - January 2018",
-    "tags": [
+    "tags": ["react"],
+    "links": [
       {
         "id": "Github Repo",
-        "url": ""
+        "url": "https://github.com/taymosier/ibx"
       }
-    ],
-    "links": ["ibx links"]
+    ]
   },
   "GCC Inventory Management App": {
     "content": {
@@ -91,11 +97,15 @@
       "text": "gcc text"
     },
     "date": "September-December 2018",
-    "tags": ["gcc tags"],
+    "tags": ["react", "node.js", "express.js", "mongodb"],
     "links": [
       {
         "id": "Github Repo",
         "url": "https://github.com/taymosier/psa"
+      },
+      {
+        "id": "Live App",
+        "url": "https://taylormosier.com"
       }
     ]
   },
@@ -113,11 +123,15 @@
       ]
     },
     "date": "February 2019 - ",
-    "tags": ["Github Repo"],
+    "tags": ["react", "node", "bootstrap", "express"],
     "links": [
       {
         "id": "Github Repo",
         "url": "https://github.com/taymosier/grand"
+      },
+      {
+        "id": "Live App",
+        "url": "http://grandeluxxemexicojoyrentals.com/"
       }
     ]
   },
@@ -127,12 +141,28 @@
       "text": "graph poke text"
     },
     "date": "April 2019 - ",
-    "tags": [
+    "tags": [],
+    "links": [
       {
         "id": "Github Repo",
         "url": "https://github.com/taymosier/pokeD3x"
       }
+    ]
+  },
+  "Portfolio V2": {
+    "content": {
+      "header": "portfolio header",
+      "text": "portfolio text"
+    },
+    "date": "April 2019",
+    "tags": [
+
     ],
-    "links": ["graph poke links"]
+    "links": [
+      {
+        "id": "Github Repo",
+        "url": "https://github.com/taymosier/portfolio_v2"
+      }
+    ]
   }
 }

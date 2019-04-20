@@ -48,14 +48,13 @@ export class MobileGridRow extends Component{
   }
 
   calculateMobileStyleValues(projectKeys){  //Calculates the attribute values for the style object that will be passed to
-    let buttonWidth = `${(90/projectKeys.length)}`; //the GridButton components being generated
     return {
             "minWidth": `90%`,
             "maxWidth": `90%`,
             "width": `90%`,
             "margin": `.5vh 5%`,
-            "minHeight": `75px`,
-            "maxHeight": `75px`,
+            "minHeight": `10vh`,
+            "maxHeight": `fit-content`,
             "visibility": this.props.activeKey !== null && this.props.activeKey !== undefined ? "hidden" : "visible"
           }
   }

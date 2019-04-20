@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Col } from 'reactstrap';
 import { MobileGridRow } from './MobileGridRow';
-import { MobileProjectCard } from './MobileProjectCard';
-import { ToggleProjectButton } from './ToggleProjectButton';
 
 export class MobileProjectsGrid extends Component{
   constructor(props){
@@ -39,7 +37,6 @@ export class MobileProjectsGrid extends Component{
   generateProjectButtons(){
     let items = this.props.items;
     let projectRows = [];
-    let startIndex = 0;
     for(let item in items){
       projectRows.push(
         <MobileGridRow
@@ -65,7 +62,7 @@ export class MobileProjectsGrid extends Component{
           xs={{ size: 12, offset: 0 }}
           className={"projects-grid"}
         >
-          <div className={"grid-filter"}></div>
+          <div className={"grid-filter"} style={{"minHeight": `${this.state.rows.length*16}vh`}}></div>
           {this.state.rows}
         </Col>
       )

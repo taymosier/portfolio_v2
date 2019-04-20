@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Col, Form, Modal, ModalHeader, ModalBody} from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody} from 'reactstrap';
 
 
 export class MobileProjectModal extends Component {
@@ -30,9 +30,11 @@ export class MobileProjectModal extends Component {
     if(this.props.card !== undefined && this.state.title !== this.props.card.title){
       this.setState({
         activeKey:  this.props.activeKey,
-        tags: this.props.card.tags,
+        tags: this.props.card.tags[0],
         title: this.props.card.title,
-        text: this.props.card.text
+        text: this.props.card.text,
+        date: this.props.card.date,
+        links: this.props.card.links[0].id
       })
     }
   }
@@ -48,8 +50,10 @@ export class MobileProjectModal extends Component {
       />
         <ModalHeader className="project-modal-header">{this.state.title}</ModalHeader>
           <ModalBody >
+            <p className="project-date">{this.state.date}</p>
             <div>{this.state.tags}</div>
-            <div>{this.state.text}</div>
+            <p>{this.state.text}</p>
+            <div>{this.state.links}</div>
           </ModalBody>
       </Modal>
     )

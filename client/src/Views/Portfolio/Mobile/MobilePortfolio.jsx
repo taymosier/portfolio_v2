@@ -38,9 +38,11 @@ export class MobilePortfolio extends Component {
       this.setState({   //if Portfolio.state.activeKey === null, sets Portfolio.state.activeKey and sets Portfolio.state.card object values from the values
         activeKey: key, //found in Portfolio.state.projects
         card: {
+          date: this.state.projects[key].date,
+          links: this.state.projects[key].links,
           tags: this.state.projects[key].tags,
-          title: "title",
-          text: "text"
+          title: this.state.projects[key].content.header,
+          text: this.state.projects[key].content.text
         }
       })
     }

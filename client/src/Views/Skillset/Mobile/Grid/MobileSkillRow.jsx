@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Row } from 'reactstrap';
-import { SkillButton } from './SkillButton';
+import { MobileSkillButton } from './MobileSkillButton';
 
-export class SkillRow extends Component {
+export class MobileSkillRow extends Component {
   constructor(props){
     super(props);
     this.state = {
@@ -16,19 +16,18 @@ export class SkillRow extends Component {
         activeSkills: this.props.activeSkill,
         skills: this.props.skills, //subset of SkillGrid.state.skills, contains only the skills being generated in a given row
         className: this.props.className,
-        buttons: this.generateSkillButtons()
+        buttons: this.generateSkillButton()
       })
     }
   }
 
   componentDidUpdate(){
     if(this.state.activeSkill !== this.props.activeSkill && this.props.activeSkill !== undefined){
-      console.log(this.props.skills)
       this.setState({
         activeSkill: this.props.activeSkill,
         skills: this.props.skills,
         className: this.props.className,
-        buttons: this.generateSkillButtons()
+        buttons: this.generateSkillButton()
       })
     }
   }
@@ -40,34 +39,26 @@ export class SkillRow extends Component {
     return "grid-button"
   }
 
-  generateSkillButtons(){
-    let buttons = [];
-    let skill, className;
+  generateSkillButton(){
     let style = this.calculateStyleValues(this.props.skills)
-    while(this.props.skills.length > 0){
-      console.log(`Skill props size: ${this.props.skills.length}`)
-      skill = this.props.skills.pop();
-      className = this.determineClass(skill, this.props.activeSkill)
-      buttons.push(
-        <SkillButton
-          style={style}
-          activeSkill={this.props.activeSkill} //set from props rather than state because this function is called within setState() and returns a state attribute value
-          className={className}
-          label={skill}
-          setActiveSkill={className === "skill-grid-button hidden" ? null : this.state.setActiveSkill}
-        />
-      )
-    }
-    return buttons;
+    let skill = this.props.skills;
+    let className = this.determineClass(skill, this.props.activeSkill)
+
+    return  <MobileSkillButton
+              style={style}
+              activeSkill={this.props.activeSkill} //set from props rather than state because this function is called within setState() and returns a state attribute value
+              className={className}
+              label={skill}
+              setActiveSkill={className === "skill-grid-button hidden" ? null : this.state.setActiveSkill}
+            />
   }
 
   calculateStyleValues(skills){  //Calculates the attribute values for the style object that will be passed to
-    let buttonWidth = `${(90/skills.length)}`; //the SkillButton components being generated
     return {
-            "minWidth": `${buttonWidth}%`,
-            "maxWidth": `${buttonWidth}%`,
-            "width": `${buttonWidth}%`,
-            "margin": `1vh ${(100-(buttonWidth*skills.length))/(skills.length*2)}%`,
+            "minWidth": `90%`,
+            "maxWidth": `90%`,
+            "width": `90%`,
+            "margin": `1vh 5vw`,
             "visibility": this.props.activeSkill ? "hidden" : "visible"
           }
   }
